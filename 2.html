@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Hw2</title>
+        <style>
+        	body{font-size:40pt}
+        	h1{font-size:1.1em}
+        	table{font-size:1em}
+            th, td, table{border-style:solid;}
+            a{cursor:grab}
+        	a:visited{color: rgb(0, 150, 0)}
+        </style>
+	</head>
+	<body>
+    	<h1>Hw2</h1>
+        <p>Timer:</p>
+        <p id="timer">3</p>
+        <script async> 
+        	"use strict";
+            setTimeout(timer0, 3000);
+            setTimeout(timer1, 2000);
+            setTimeout(timer2, 1000);
+            function timer0() {
+            	document.getElementById("timer").innerHTML = 0;
+            }
+            function timer1() {
+            	document.getElementById("timer").innerHTML = 1;
+            }
+            function timer2() {
+            	document.getElementById("timer").innerHTML = 2;
+            }
+        </script>
+		<table>
+  			<tr>
+    			<th>HWN</th>
+    			<th>Status</th>
+                <th>Git link(-s)</th>
+  			</tr>
+  			<tr>
+    			<td>1</td>
+    			<td>Done</td>
+                <td>
+                	<a href="https://github.com/OlegF314/web2022/blob/main/1.py">1.py</a><br> 
+                	<a href="https://github.com/OlegF314/web2022/blob/main/1_1.py">1_1.py</a>
+                </td>
+  			</tr>
+            <tr>
+    			<td>2</td>
+    			<td>In Progress</td>
+                <td>NULL</td>
+  			</tr>
+		</table>
+        <address> Page created by <a href= "mailto:o.l.e.g.f@yandex.ru">Oleg Fyodorov</a>.
+        </address>
+	</body>
+</html>
