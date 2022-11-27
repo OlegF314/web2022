@@ -1,0 +1,13 @@
+FROM golang:latest
+
+RUN mkdir /main
+ADD ./hw5_1.go /main/
+WORKDIR /main/
+
+RUN go mod init hw51
+RUN go mod tidy
+RUN go build -o 1.exe ./hw5_1.go
+
+EXPOSE 1234
+
+CMD ["./1.exe"]
