@@ -9,6 +9,11 @@ services:
       environment:
         ZOOKEEPER_CLIENT_PORT: 2181
         ZOOKEEPER_TICK_TIME: 2000
+      healthcheck:
+        test: curl --fail -s http://localhost:2181/ || exit 1
+        interval: 1m30s
+        timeout: 10s
+        retries: 3
   broker:
     image: confluentinc/cp-server:6.1.1
     hostname: broker
